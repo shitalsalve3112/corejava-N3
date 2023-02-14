@@ -1,10 +1,12 @@
 package org.tnif.arraysdemo;
+
 //program to demonstrate array object
 public class Student {
 
 	private int rollno;
 	private String name;
 	private float percentage;
+	
 //getters and setters
 	public int getRollno() {
 		return rollno;
@@ -24,6 +26,7 @@ public class Student {
 	public void setPercentage(float percentage) {
 		this.percentage = percentage;
 	}
+	
 //parameterised construtor
 	public Student(int rollno, String name, float percentage) {
 		super();
