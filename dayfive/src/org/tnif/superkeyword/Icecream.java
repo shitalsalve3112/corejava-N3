@@ -1,12 +1,11 @@
 package org.tnif.superkeyword;
 
 public class Icecream {
-  
-	private name String
 
-	public Icecream(name string) {
-		super();
-		String = string;
-	} name"Icecream flavours";
+	protected String name="Icecream flavours";
+
+	public Icecream() {
+		System.out.println("Parent Class");
+	}
 	
 }

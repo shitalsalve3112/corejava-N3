@@ -1,25 +1,27 @@
 package org.tnif.thiskeyword;
 
-public class ThisKeywordDemo {
-  
-	public static void main(String[]args) {
-		int a;
-		int b;
-	      public void setdata(int a,int b) 
-		{
-			a=a;
-			b=b;
-		}
-		public void showdata() {
-			System.out.println("value of A ="+a);
-			System.out.println("value of B ="+b);
-		}
+
+//It can be used to refer instance of current class
+class Account
+{
+	int a;
+	int b;
+	void setData(int a,int b)
+	{
+		this.a=a;
+		this.b=b;
 	}
-	public class main{
-		public static void main(String args[])
-		{
-		Acoount a1=new Account();
-		a1.setData()
-		}
+	public void print() {
+		System.out.println("Value of A ="+a);
+		System.out.println("Value of B ="+b);
+	}
+}
+
+public class ThisKeywordDemo {
+
+	public static void main(String[]args) {
+		Account a1=new Account();
+		a1.setData(19,60);
+		a1.print();
 	}
 }

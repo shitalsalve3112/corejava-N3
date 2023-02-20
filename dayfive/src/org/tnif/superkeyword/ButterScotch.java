@@ -1,13 +1,14 @@
 package org.tnif.superkeyword;
 
-//child class
-public class ButterScotch extends IceCream {
 
-		protected String flavours="Creamy ButterScotch";	
-	}
+//chind class
+public class ButterScotch extends Icecream {
+	protected String flavour="Creamy ButterScotch";
 
 	public ButterScotch() {
-		System.out.println("Childclass"+flavours);
+		//super();
+		System.out.println("Child Class");
 	}
 	
+
 }

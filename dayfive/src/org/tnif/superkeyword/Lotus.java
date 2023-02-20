@@ -1,6 +1,11 @@
 package org.tnif.superkeyword;
 
-public class Lotus  extens Flower{
- 
-	public String name;
+//parent class
+public class Lotus {
+
+	private String engine="petrol";
+	public void print()
+	{
+		System.out.println("Engine required:"+engine);
+	}
 }

@@ -1,23 +1,21 @@
 package org.tnif.staticdemo;
 
-//program to demonstrate on Static variable
 public class StaticVariable {
+	//Non static variable
+	private String name;
 	
-//non-static variable
-   private String name;
- 
- //static variable
-	public static String CompanyName="TCS";
-	
-// constructor
+	//static Variable
+	public static String companyName ="TechnoServe India";
+
 	public StaticVariable(String name) {
+		super();
 		this.name = name;
 	}
-//Two String
-	
+
 	@Override
 	public String toString() {
-		return "StaticVariable [name=" + name + "];
+		return "StaticDemo [name=" + name + "]";
 	}
+	
 	
 }
