@@ -1,5 +1,5 @@
 package org.tnif.multithread;
- 
+
 //driver class
 //program to demonstrate on synchronized method
  public class SynchonizationDemoExecuter {
