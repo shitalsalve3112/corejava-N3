@@ -1,52 +1,53 @@
 package org.tnif.multithread;
 
-public class SynchonizationDemo {
 
-	 synchronized void print(int num) throws InterruptedException
+//program to demonstrate on synchronized method
+
+public class SynchonizationDemo {
+	
+	synchronized void print(int num) throws InterruptedException
 	{
-	for ( int i=1;i<=5;i++)
-	{
-		System.out.println(num*i);
+		for(int i=1;i<=5;i++)
+		{
+			System.out.println(num*i);
+		}
 	}
-	}
+
 }
+//Thread1 
 class ThreadOne extends Thread
 {
 	SynchonizationDemo d;
-	public ThreadOne(SynchonizationDemo d)
-	{
+
+	public ThreadOne(SynchonizationDemo d) {
 		super();
-		this.d=d;
+		this.d = d;
 	}
-	 public void run()
-	 try
-	 {
-		 d.print(10);
-	 }
-	 catch(InterruptedException e)
+	public void run()
 	{
-		System.out.println(e);
+		try {
+			d.print(10);
+		} catch (InterruptedException e) {
+			System.out.println(e);
+		}
 	}
 }
-//
-class ThreadTwo extends ThreadOne
+//Thread2
+class ThreadTwo extends Thread
 {
-	SynchonizationDemo d1;
-	public ThreadTwo(SynchonizationDemo d)
-	{
+	SynchonizationDemo d;
+	
+	public ThreadTwo(SynchonizationDemo d) {
 		super();
-		this.d1=d1;
+		this.d = d;
 	}
-	 public void run() 
-	 {
-		 try
-		 {
-			d.print(34);
-		 }
-	 catch(InterruptedException e)
-		 {
-		 System.out.println();
-		 }
-     }
-  }
+	public void run()
+	{
+		try {
+			d.print(15);
+		} catch (InterruptedException e) {
+			System.out.println(e);
+
+		}
+	}
 }
