@@ -17,7 +17,7 @@ public class MethodOverloadingExecuter {
 		sp.display(resolution);
 		sp.display(resolution, slottype);
 		
-		Multiplication  m=new Multiplication ();
+		Multiplication m=new Multiplication ();
 		System.out.println(m.mul(2, 5));
 		System.out.println(m.mul(5.2f, 4));
 		
